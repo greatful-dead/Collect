@@ -1,0 +1,44 @@
+@import "../../wxParse/wxParse.wxss";
+
+/* .all{
+  margin:30rpx;
+} */
+.bottom{
+  height: 8vh;
+  overflow: hidden;
+  display: flex;
+
+}
+.bottom .icon{
+  flex: 1 0 10%;
+  font-size: 10px;
+  text-align: center;
+}
+.bottom .icon image{
+  padding-top: 9px;
+}
+.bottom .icon text{
+  display: block;
+  color: #666666;
+}
+.kong{
+  width:690rpx;height:200rpx;
+}
+.news{
+  
+  width:690rpx;
+  margin-left:30rpx;
+  font-size:36rpx;
+  position: absolute;
+  text-overflow:ellipsis;
+  word-wrap:break-word;
+}
+.title{
+  margin-left:22rpx;
+  font-weight:bold;
+  width:690rpx;
+  font-size:50rpx;
+  position: absolute;
+text-overflow:ellipsis;
+word-wrap:break-word;
+}
