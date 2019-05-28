@@ -1,0 +1,35 @@
+
+ 
+
+<scroll-view scroll-y style='height:92vh;'>
+<view class='title' style='margin:20rpx;'>
+{{title}}
+</view>
+<view class='kong'>\n</view>
+<view style='color:#E1503D;margin-left:30rpx;'><text>发布时间：{{time}}</text></view>
+<view class='news'>
+<import src="../../wxParse/wxParse.wxml"/>
+<template is="wxParse" data="{{wxParseData:pp.nodes}}"/>
+</view>
+
+<view style='position:fixed;right:10rpx;bottom:26rpx;width:70rpx;height:70rpx;border-radius:0;z-index:994;background:#fff;border-radius:50%;border:1px solid #cacaca;display:flex;flex-direction:column;align-items: center;opacity:0.5' wx:if="{{goTopStatus}}"bindtap='goToTop'>
+    <image src='http://cos.qkmai.com/qkmbb/ytal/toptb.png' style='width:50rpx;height:auto;margin-top:10rpx' mode='widthFix'></image>
+</view>
+</scroll-view>
+
+<view class='bottom'>
+<view class='icon' bindtap='change'>
+    <image wx:if="{{click}}" src='/images/Unfavored.png' style='width:18px;height:18px;'></image>
+    <image wx:else src='/images/favor.png' style='width:18px;height:18px;'></image>
+    <text>喜爱</text>
+</view>
+<view class='icon' bindtap='favor'>
+    <image wx:if="{{click1}}" src='/images/watch.png' style='width:18px;height:18px;'></image>
+    <image wx:else src='/images/Unwatched.png' style='width:18px;height:18px;'></image>
+    <text>收藏</text>
+</view>
+ <!-- bindtap='specFun' -->
+
+</view>
+
+
