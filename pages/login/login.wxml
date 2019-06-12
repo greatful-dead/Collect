@@ -1,0 +1,2 @@
+<!--pages/login/login.wxml-->
+<button bindgetuserinfo="getUserInfo" open-type='getUserInfo'style="width:500rpx;height:150rpx;margin-top:500rpx;background-color:white;border-radius:5rpx;display: flex;flex-direction:column;align-items:center;justify-content:center;font-size:30rpx"><view class='bin'style="font-size:45rpx">请点击授权</view></button>
