@@ -1,0 +1,14 @@
+<!--pages/detail2/detail2.wxml-->
+<scroll-view scroll-y style='height:100vh;'>
+<view class='detail'>
+  <view class='header'>
+    <view class='article-title'>{{title}}</view>
+    <view class='news-source'>{{src}}</view>
+  </view>
+  <view class='content'>
+    <import src="../../../wxParse/wxParse.wxml" />
+    <template is="wxParse" data="{{wxParseData:pp.nodes}}" />
+  </view>
+  <loading hidden='{{indexIsHidden}}'>正在加载</loading>
+</view>
+</scroll-view>
