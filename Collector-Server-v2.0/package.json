@@ -15,7 +15,7 @@
     "connect-multiparty": "^2.1.1",
     "cookie-parser": "^1.4.3",
     "express": "^4.16.3",
-    "marked": "^0.6.2",
+    "marked": "^4.0.10",
     "moment": "^2.22.2",
     "moment-timezone": "^0.5.25-2019a",
     "mongoose": "^5.2.9",
